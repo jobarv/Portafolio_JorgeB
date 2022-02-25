@@ -16,6 +16,7 @@ header {
 .card {
   width: 40%;
   font-size: 24px;
+  color: #ffff;
   margin: 100px 10px;
   border: 1px solid #e3e3e3;
   height: 300px;
