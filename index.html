@@ -5,23 +5,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Jorge Barrera</title>
+
+    <title>Jorge Barrera web developer</title>
 </head>
 
 <body>
     <nav>
         <h1 data-aos="flip-down" data-aos-duration="1000">Jorge Barrera <span>Web Developer</span></h1>
-
-        <ul>
-            <li>Proyectos</li>
-            <li>Habilidades</li>
-            <li>Sobre mí</li>
-            <li>Contacto</li>
-        </ul>
+        <div>
+            <ul class="navParent" data-aos="flip-down" data-aos-duration="1000">
+                <li class="nav__Link"> Proyectos</li>
+                <li class="nav__Link">Habilidades</li>
+                <li class="nav__Link">Sobre mí</li>
+                <li class="nav__Link">Contacto</li>
+            </ul>
+        </div>
 
     </nav>
+    <!-- Sobre Mi -->
+    <div>
+
+
+        <h2 class="topTitle">Sobre mí</h2>
+
+
+        <p class="topParra">Soy ingeniero en electrónica y automatización, egresado de la Facultad de Ingeniería
+            Mecánica Eléctrica, de la UANL, especializado en programación de
+            equipos autómatas, también desarrollo software, sitios web y aplicaciones moviles.</p>
+
+        <p class="topParra">
+
+            Si tienes un proyecto en el que te interese me involucre contáctame, siempre estoy en busca de
+            desarrollar mis habilidades y me gusta conocer gente nueva con la misma pasión por la programación. Si
+            estás interesado en que te ayude con tu página web o quieres desarrollar alguna aplicación de igual
+            manera contáctame, estoy a tus ordenes.</p>
+
+        <p class="topParra">
+
+            Junto con dos colegas mios fundamos VABAJA, empresa dedicada a brindar soluciones en tecnología, una de
+            las ramas es desarrollo de software, puedes visitarla haciendo click <a
+                href="https://www.vabaja.com.mx">aquí</a>
+        </p>
+    </div>
+
+    <!-- Termina sobre mi -->
     <!-- Proyectos -->
     <header>
         <h2 data-aos="flip-down" data-aos-duration="1000">Algunos de mis Proyectos</h2>
@@ -51,44 +84,64 @@
             <!-- Habilidades -->
         </div>
         <div>
-            <h2>Habilidades</h2>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-            <p>VueJS</p>
-            <p>NuxtJS</p>
-            <p>Angular</p>
-            <p>Git</p>
-            <p>WordPress</p>
-            <p>Figma</p>
-            <p>Adobe Illustrator</p>
-            <p>C#</p>
-            <p>Inglés</p>
+            <h2 class="bottomTitle">Habilidades</h2>
+            <div>
+
+                <p class="bottomParra">HTML</p>
+                <p class="bottomParra">CSS</p>
+                <p class="bottomParra">JavaScript</p>
+                <p class="bottomParra">Git</p>
+                <p class="bottomParra">WordPress</p>
+                <p class="bottomParra">Figma</p>
+                <p class="bottomParra">Adobe Illustrator</p>
+                <p class="bottomParra">Inglés</p>
+<!--                 <p class="bottomParra">VueJS</p>
+                <p class="bottomParra">NuxtJS</p>
+                <p class="bottomParra">Angular</p>
+                <p class="bottomParra">C#</p> -->
+            </div>
         </div>
         <!--Termina Habilidades -->
-        <!-- Sobre Mi -->
-        <div>
-            <h2>Sobre mí</h2>
-            <p>Soy ingeniero en electrónica y automatización de profesión, amante de la tecnología y con una segunda
-                pasión en el desarrollo de software, aprovechando la nueva normalidad.</p>
-            <h2>Mis Certificaciones</h2>
-            <div>
-                <h2>Desarrollo Web</h2>
-            </div>
-            <p>Constantemente me encuentro desarrollandome de manera auto didacta, adicional a mis certificaciones.</p>
 
+        <div>
+            <h2 class="bottomTitle">Mis Certificaciones</h2>
+            <div>
+                <h3 class="bottomTitle">Desarrollo Web</h3>
+                <p class="bottomParra">Completé el curso de desarrollo web con Coderhouse, puedes ver mi certificado
+                    haciendo click <a href="#">aquí</a> </p>
+            </div>
+            <!--             <div>
+                <h3 class="bottomTitle">Desarrollo Web</h3>
+                <p class="bottomParra">Completé el curso de desarrollo web con Coderhouse, puedes ver mi certificado
+                    haciendo click <a href="#">aquí</a> </p>
+            </div>
+            <div>
+                <h3 class="bottomTitle">Desarrollo Web</h3>
+                <p class="bottomParra">Completé el curso de desarrollo web con Coderhouse, puedes ver mi certificado
+                    haciendo click <a href="#">aquí</a> </p>
+            </div>
+            <div>
+                <h3 class="bottomTitle">Desarrollo Web</h3>
+                <p class="bottomParra">Completé el curso de desarrollo web con Coderhouse, puedes ver mi certificado
+                    haciendo click <a href="#">aquí</a> </p>
+            </div> -->
         </div>
-        <!-- Termina sobre mi -->
+
+
+
         <!-- Contacto -->
         <div>
             <div>
-                <i>
-                <a href="https://www.linkedin.com/in/jobarv"></a>Linkedin</i>
-                <i>
-                <a href="https://wwww.github.com/jobarv"></a>Github</i>
+                <i class="fa-brands fa-linkedin">
+                    <a href="https://www.linkedin.com/in/jobarv"></a>Linkedin</i>
+                <i class="fa-brands fa-github-alt">
+                    <a href="https://wwww.github.com/jobarv"></a>Github</i>
             </div>
-            <h2>Contáctame</h2>
-            
+            <div>
+
+                <h2 class="bottomTitle">Contáctame</h2>
+
+            </div>
             <form action="">
 
             </form>
@@ -102,7 +155,8 @@
         <!-- Termina Footer -->
     </main>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src=" https://unpkg.com/aos@next/dist/aos.js">
+    </script>
     <script>
         AOS.init();
     </script>

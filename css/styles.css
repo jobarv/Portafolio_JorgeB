@@ -1,8 +1,44 @@
-body {
-  background-image: url(../img/annie-spratt-6a3nqQ1YwBw-unsplash.jpg); }
+@charset "UTF-8";
+html {
+  box-sizing: border-box; }
 
-h1, h2, h3, h4, p, .subtitle {
-  color: #ffff; }
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  background: linear-gradient(#cacaca, #262afd);
+  font-family: "Montserrat", sans-serif; }
+
+a {
+  text-transform: uppercase;
+  color: #dee3f1;
+  text-decoration: none; }
+
+i {
+  display: inline-block;
+  width: 150px; }
+
+a, i {
+  cursor: pointer;
+  font-weight: 700; }
+
+h1,
+h2,
+h3,
+h4 {
+  color: #010b6b; }
+
+p {
+  color: #001535; }
+
+h1 {
+  font-weight: 700; }
+
+.bottomTitle {
+  color: #dee3f1; }
+
+.bottomParra {
+  color: #bfc3fd; }
 
 header {
   text-align: center;
@@ -15,11 +51,29 @@ header {
 
 .card {
   width: 40%;
-  font-size: 24px;
-  color: #ffff;
-  margin: 100px 10px;
-  border: 1px solid #e3e3e3;
-  height: 300px;
+  height: 20rem;
+  font-size: 1.5rem;
+  color: #080a1f;
+  margin: 8rem 1rem;
+  border: 1px solid #202331;
   display: flex;
   align-items: center;
   justify-content: center; }
+
+/* Termina Globales */
+/* Barra de Navegación */
+.navParent {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  font-weight: 700;
+  color: #010b6b; }
+
+.navParent :hover {
+  color: black;
+  cursor: pointer; }
+
+.nav__Link {
+  padding: 0.8rem; }
+
+/* Termina Barra de Navegación */
