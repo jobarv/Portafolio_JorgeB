@@ -34,6 +34,7 @@ body {
   /* margin-top: 20px;
   margin-bottom: 20px; */
 }
+
 .sombra {
   padding: 2rem;
   background-color: rgb(121, 30, 30);
@@ -42,6 +43,7 @@ body {
   -moz-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
   box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
 }
+
 a {
   text-transform: uppercase;
   color: #dee3f1;
@@ -105,6 +107,9 @@ html {
   padding: 60px;
   scroll-snap-align: start;
   border-radius: 50px;
+  width: 400px;
+  height: 200px;
+  position: center center;
 }
 
 .card h1 {
@@ -113,8 +118,13 @@ html {
 
 .card:nth-child(1) {
   /* background: linear-gradient(-229deg, #00DBDE, #FC00FF); */
-  background-image: url(../img/gifDEMO.gif);
-  background-repeat: no-repeat;
+
+  background-position: center center;
+
+}
+
+.card:nth-child(1):hover {
+  background: url("../img/gifDEMO.gif") no-repeat;
   background-position: center center;
 }
 
@@ -134,54 +144,6 @@ html {
   background: linear-gradient(-229deg, #FBAB7E, #F7CE68);
 }
 
-/* GIFS  */
-#container {
-  width: 530px;
-  height: 400px;
-  position: relative;
-  margin: auto;
-}
-
-#options {
-  width: 260px;
-  height: 50px;
-  position: relative;
-  top: 20px;
-  margin: auto
-}
-
-.player {
-  position: absolute;
-  top: 0px;
-}
-
-#option_1 {
-  float: left
-}
-
-#option_2 {
-  float: right
-}
-
-#option_3 {
-  width: 84px;
-  margin: auto;
-}
-
-#viewer {
-  width: 530px;
-  height: 290px;
-  position: absolute;
-  bottom: 0px;
-  overflow: hidden
-}
-
-video {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  display: none
-}
 
 /* .cards {
   display: flex;
