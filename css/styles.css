@@ -28,6 +28,11 @@ body {
   position: relative;
 }
 
+section {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
 /* VIDEO DE FONDO */
 video {
   position: fixed;
@@ -97,62 +102,11 @@ h1 {
 
 header {
   text-align: center;
-  padding: 100px;
 }
 
 html {
   background-color: #212123;
   color: #EFEFEF;
-}
-
-.contenido {
-  display: flex;
-  overflow-x: scroll;
-  width: 100%;
-  scroll-snap-type: x mandatory;
-  scroll-padding: 25px;
-  column-gap: 10px;
-}
-
-.tarjeta {
-  padding: 60px;
-  scroll-snap-align: start;
-  border-radius: 50px;
-  width: 400px;
-  height: 200px;
-  position: center center;
-}
-
-.tarjeta h1 {
-  margin-bottom: 2rem;
-}
-
-.tarjeta:nth-child(1) {
-  /* background: linear-gradient(-229deg, #00DBDE, #FC00FF); */
-
-  background-position: center center;
-
-}
-
-.tarjeta:nth-child(1):hover {
-  background: url("../img/gifDEMO.gif") no-repeat;
-  background-position: center center;
-}
-
-.tarjeta:nth-child(2) {
-  background: linear-gradient(-229deg, #0093E9, #80D0C7);
-}
-
-.tarjeta:nth-child(3) {
-  background: linear-gradient(-229deg, #50d990, #d4d054);
-}
-
-.tarjeta:nth-child(4) {
-  background: linear-gradient(-229deg, #D9AFD9, #97D9E1);
-}
-
-.tarjeta:nth-child(5) {
-  background: linear-gradient(-229deg, #FBAB7E, #F7CE68);
 }
 
 
@@ -187,28 +141,87 @@ html {
     justify-content: flex-end;
   }
 
-  .navParent:hover {
-  }
+  .navParent:hover {}
 
 }
 
 /* Termina Barra de Navegación */
+/* TARJETAS */
+.contenido {
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+  height: 313px;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 25px;
+  column-gap: 10px;
+}
+
+.sombraTarjeta {
+  
+}
+
+.tarjeta {
+  padding: 50px;
+  scroll-snap-align: start;
+  border-radius: 50px;
+  width: 582px;
+  height: 278px;
+}
+
+.tarjeta h1 {
+  margin-bottom: 2rem;
+}
+
+.tarjeta:nth-child(1) {
+  /* background: linear-gradient(-229deg, #00DBDE, #FC00FF); */
+
+  background-position: center center;
+
+}
+
+.tarjeta:nth-child(1):hover {
+  background: url("../img/gifDEMO.gif") no-repeat;
+  background-position: center center;
+  background-color: rgba(0, 0, 0, .3);
+  z-index: 4;
+}
+
+.tarjeta:nth-child(2) {
+  background: linear-gradient(-229deg, #0093E9, #80D0C7);
+}
+
+.tarjeta:nth-child(3) {
+  background: linear-gradient(-229deg, #50d990, #d4d054);
+}
+
+.tarjeta:nth-child(4) {
+  background: linear-gradient(-229deg, #D9AFD9, #97D9E1);
+}
+
+.tarjeta:nth-child(5) {
+  background: linear-gradient(-229deg, #FBAB7E, #F7CE68);
+}
+
+/* TERMINA TARJETAS */
 
 /* Barra SKILLS */
 
 .skill {
   margin-bottom: 35px;
   position: relative;
-overflow-x:hidden;
+  overflow-x: hidden;
 
 }
-.skill > p {
+
+.skill>p {
   font-size: 18px;
   font-weight: 700;
   color: #fcfcfc;
   margin: 0;
 }
-.skill:before{
+
+.skill:before {
   width: 100%;
   height: 5px;
   content: "";
@@ -217,20 +230,22 @@ overflow-x:hidden;
   background: #959595;
   bottom: 0;
 }
+
 .skill-bar {
   width: 100%;
   height: 5px;
-  background:#f4392f;
+  background: #f4392f;
   display: block;
   position: relative;
 }
 
 /* SKILL 1 */
-.skill1{
+.skill1 {
   width: 90%;
 
 }
-.skill-bar span{
+
+.skill-bar span {
   position: absolute;
   border-top: 5px solid #f4392f;
   top: -30px;
@@ -239,6 +254,7 @@ overflow-x:hidden;
   padding: 3px 0;
   font-weight: 500;
 }
+
 .skill-bar {
   position: relative;
 
@@ -247,24 +263,27 @@ overflow-x:hidden;
 .skill1 .skill-count1 {
   right: 0;
 }
+
 /* SKILL 2 */
-.skill2{
+.skill2 {
   width: 80%;
 }
 
 .skill2 .skill-count2 {
   right: 0;
 }
+
 /* SKILL 3 */
-.skill3{
+.skill3 {
   width: 50%;
 }
+
 .skill3 .skill-count3 {
   right: 0;
 }
 
 /* SKILL 4 */
-.skill4{
+.skill4 {
   width: 50%
 }
 
@@ -273,7 +292,7 @@ overflow-x:hidden;
 }
 
 /* SKILL 5 */
-.skill5{
+.skill5 {
   width: 40%;
 }
 
@@ -282,39 +301,43 @@ overflow-x:hidden;
 }
 
 /* SKILL 6 */
-.skill6{
+.skill6 {
   width: 50%
 }
 
 .skill6 .skill-count6 {
   right: 0;
 }
+
 /* SKILL 7 */
-.skill7{
+.skill7 {
   width: 40%
 }
 
 .skill7 .skill-count7 {
   right: 0;
 }
+
 /* SKILL 8 */
-.skill8{
+.skill8 {
   width: 70%
 }
 
 .skill8 .skill-count8 {
   right: 0;
 }
+
 /* SKILL 9 */
-.skill9{
+.skill9 {
   width: 40%
 }
 
 .skill9 .skill-count9 {
   right: 0;
 }
+
 /* SKILL 10 */
-.skill10{
+.skill10 {
   width: 60%
 }
 
