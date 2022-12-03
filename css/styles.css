@@ -114,7 +114,7 @@ html {
   column-gap: 10px;
 }
 
-.card {
+.tarjeta {
   padding: 60px;
   scroll-snap-align: start;
   border-radius: 50px;
@@ -123,37 +123,38 @@ html {
   position: center center;
 }
 
-.card h1 {
+.tarjeta h1 {
   margin-bottom: 2rem;
 }
 
-.card:nth-child(1) {
+.tarjeta:nth-child(1) {
   /* background: linear-gradient(-229deg, #00DBDE, #FC00FF); */
 
   background-position: center center;
 
 }
 
-.card:nth-child(1):hover {
+.tarjeta:nth-child(1):hover {
   background: url("../img/gifDEMO.gif") no-repeat;
   background-position: center center;
 }
 
-.card:nth-child(2) {
+.tarjeta:nth-child(2) {
   background: linear-gradient(-229deg, #0093E9, #80D0C7);
 }
 
-.card:nth-child(3) {
+.tarjeta:nth-child(3) {
   background: linear-gradient(-229deg, #50d990, #d4d054);
 }
 
-.card:nth-child(4) {
+.tarjeta:nth-child(4) {
   background: linear-gradient(-229deg, #D9AFD9, #97D9E1);
 }
 
-.card:nth-child(5) {
+.tarjeta:nth-child(5) {
   background: linear-gradient(-229deg, #FBAB7E, #F7CE68);
 }
+
 
 /* Termina Globales */
 
@@ -180,4 +181,147 @@ html {
   padding: 10px;
 }
 
+@media (min-width: 768px) {
+  .navParent {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .navParent:hover {
+  }
+
+}
+
 /* Termina Barra de Navegación */
+
+/* Barra SKILLS */
+
+.skill {
+  margin-bottom: 35px;
+  position: relative;
+overflow-x:hidden;
+
+}
+.skill > p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fcfcfc;
+  margin: 0;
+}
+.skill:before{
+  width: 100%;
+  height: 5px;
+  content: "";
+  display: block;
+  position: absolute;
+  background: #959595;
+  bottom: 0;
+}
+.skill-bar {
+  width: 100%;
+  height: 5px;
+  background:#f4392f;
+  display: block;
+  position: relative;
+}
+
+/* SKILL 1 */
+.skill1{
+  width: 90%;
+
+}
+.skill-bar span{
+  position: absolute;
+  border-top: 5px solid #f4392f;
+  top: -30px;
+  padding: 0;
+  font-size: 18px;
+  padding: 3px 0;
+  font-weight: 500;
+}
+.skill-bar {
+  position: relative;
+
+}
+
+.skill1 .skill-count1 {
+  right: 0;
+}
+/* SKILL 2 */
+.skill2{
+  width: 80%;
+}
+
+.skill2 .skill-count2 {
+  right: 0;
+}
+/* SKILL 3 */
+.skill3{
+  width: 50%;
+}
+.skill3 .skill-count3 {
+  right: 0;
+}
+
+/* SKILL 4 */
+.skill4{
+  width: 50%
+}
+
+.skill4 .skill-count4 {
+  right: 0;
+}
+
+/* SKILL 5 */
+.skill5{
+  width: 40%;
+}
+
+.skill5 .skill-count5 {
+  right: 0;
+}
+
+/* SKILL 6 */
+.skill6{
+  width: 50%
+}
+
+.skill6 .skill-count6 {
+  right: 0;
+}
+/* SKILL 7 */
+.skill7{
+  width: 40%
+}
+
+.skill7 .skill-count7 {
+  right: 0;
+}
+/* SKILL 8 */
+.skill8{
+  width: 70%
+}
+
+.skill8 .skill-count8 {
+  right: 0;
+}
+/* SKILL 9 */
+.skill9{
+  width: 40%
+}
+
+.skill9 .skill-count9 {
+  right: 0;
+}
+/* SKILL 10 */
+.skill10{
+  width: 60%
+}
+
+.skill10 .skill-count10 {
+  right: 0;
+}
+
+
+
+/* Termina BARRA SKILLS  */
