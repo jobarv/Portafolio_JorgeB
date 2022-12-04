@@ -157,10 +157,6 @@ html {
   column-gap: 10px;
 }
 
-.sombraTarjeta {
-  
-}
-
 .tarjeta {
   padding: 50px;
   scroll-snap-align: start;
@@ -169,22 +165,27 @@ html {
   height: 278px;
 }
 
+
 .tarjeta h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
+a>p{
+  /* text-transform: none; */
+  text-align: center;
+  font-weight: 700;
+}
 .tarjeta:nth-child(1) {
-  /* background: linear-gradient(-229deg, #00DBDE, #FC00FF); */
-
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/vabajaScreenShot.png");
   background-position: center center;
-
+  /* position: relative; */
 }
 
 .tarjeta:nth-child(1):hover {
-  background: url("../img/gifDEMO.gif") no-repeat;
-  background-position: center center;
   background-color: rgba(0, 0, 0, .3);
-  z-index: 4;
+
 }
 
 .tarjeta:nth-child(2) {
@@ -219,6 +220,7 @@ html {
   font-weight: 700;
   color: #fcfcfc;
   margin: 0;
+
 }
 
 .skill:before {
@@ -345,6 +347,12 @@ html {
   right: 0;
 }
 
+@media (max-width: 768px) {
+  .skill>p {
 
+    padding-bottom: 26px;
+  }
+
+}
 
 /* Termina BARRA SKILLS  */
