@@ -125,10 +125,10 @@ html {
 
 .navParent :hover {
   background-color: var(--colorHoverNav);
-  width: 100%;
   color: black;
   cursor: pointer;
   text-align: center;
+  border-radius: 20%;
 }
 
 .nav__Link {
@@ -157,51 +157,161 @@ html {
   column-gap: 10px;
 }
 
-.tarjeta {
+/* .ContTarjeta {
   padding: 50px;
   scroll-snap-align: start;
   border-radius: 50px;
-  width: 582px;
+  width: 100%;
   height: 278px;
+  
+} */
+
+.tarjeta {
+  padding: 50px;
+  text-align: center;
+  scroll-snap-align: start;
+  border-radius: 50px;
+  width: 572px;
+  height: 278px;
+  border-radius: 20%;
+}
+
+.tarjeta h2 {
+  margin-top: -40px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 
-.tarjeta h1 {
-  margin-bottom: 1rem;
-}
-
-a>p{
-  /* text-transform: none; */
+a>p {
+  text-transform: none;
   text-align: center;
   font-weight: 700;
+  font-size: 14px;
 }
+
 .tarjeta:nth-child(1) {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../img/vabajaScreenShot.png");
   background-position: center center;
-  /* position: relative; */
+  -webkit-filter: blur(2px);
+  transition: 1s ease;
 }
 
 .tarjeta:nth-child(1):hover {
-  background-color: rgba(0, 0, 0, .3);
+  transition: 1s ease;
+  -webkit-filter: blur(0px);
+  cursor: pointer;
 
 }
 
 .tarjeta:nth-child(2) {
-  background: linear-gradient(-229deg, #0093E9, #80D0C7);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/barrasdesignsScreenshot.png");
+  background-position: center center;
+  -webkit-filter: blur(2px);
+  transition: 1s ease;
 }
 
+.tarjeta:nth-child(2):hover {
+  background-color: rgba(0, 0, 0, .3);
+  transition: 1s ease;
+  -webkit-filter: blur(0px);
+  cursor: pointer;
+
+}
+
+
 .tarjeta:nth-child(3) {
-  background: linear-gradient(-229deg, #50d990, #d4d054);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/mFrutosScreenShot.png");
+  background-position: center center;
+  -webkit-filter: blur(2px);
+  transition: 1s ease;
+}
+
+.tarjeta:nth-child(3):hover {
+  background-color: rgba(0, 0, 0, .3);
+  transition: 1s ease;
+  -webkit-filter: blur(0px);
+  cursor: pointer;
+
 }
 
 .tarjeta:nth-child(4) {
-  background: linear-gradient(-229deg, #D9AFD9, #97D9E1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/JanRadaScreenShot.png");
+  background-position: center center;
+  -webkit-filter: blur(2px);
+  transition: 1s ease;
+}
+
+.tarjeta:nth-child(4):hover {
+  background-color: rgba(0, 0, 0, .3);
+  transition: 1s ease;
+  -webkit-filter: blur(0px);
+  cursor: pointer;
+
 }
 
 .tarjeta:nth-child(5) {
-  background: linear-gradient(-229deg, #FBAB7E, #F7CE68);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/PensioneConsultoria.png");
+  background-position: center center;
+  -webkit-filter: blur(2px);
+  transition: 1s ease;
+}
+
+.tarjeta:nth-child(5):hover {
+  background-color: rgba(0, 0, 0, .3);
+  transition: 1s ease;
+  -webkit-filter: blur(0px);
+  cursor: pointer;
+
+}
+
+.tarjeta:nth-child(6) {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/CesnaFluidPlatformScreenShot.png");
+  background-position: center center;
+  -webkit-filter: blur(2px);
+  transition: 1s ease;
+}
+
+.tarjeta:nth-child(6):hover {
+  background-color: rgba(0, 0, 0, .3);
+  transition: 1s ease;
+  -webkit-filter: blur(0px);
+  cursor: pointer;
+
+}
+/* .tarjeta:nth-child(7) {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/MSantanaScreenShot.png");
+  background-position: center center;
+  -webkit-filter: blur(2px);
+  transition: 1s ease;
+}
+
+.tarjeta:nth-child(7):hover {
+  background-color: rgba(0, 0, 0, .3);
+  transition: 1s ease;
+  -webkit-filter: blur(0px);
+  cursor: pointer;
+
+} */
+@media (max-width: 768px) {
+  .tarjeta {
+    -webkit-filter: blur(0px) !important;
+  }
 }
 
 /* TERMINA TARJETAS */
@@ -356,3 +466,106 @@ a>p{
 }
 
 /* Termina BARRA SKILLS  */
+
+/* CERTIFICACIONES */
+.contDiploma {
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+  height: 313px;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 25px;
+  column-gap: 10px;
+}
+
+.diploma {
+  padding: 50px;
+  text-align: center;
+  scroll-snap-align: start;
+  border-radius: 50px;
+  width: 572px;
+  height: 278px;
+  border-radius: 20%;
+}
+
+.diploma h2 {
+  margin-top: -40px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+
+.diploma:nth-child(1) {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/webdevScreenshot.png");
+  background-position: center center;
+  -webkit-filter: blur(2px);
+  transition: 1s ease;
+}
+
+.diploma:nth-child(1):hover {
+  background-color: rgba(0, 0, 0, .3);
+  transition: 1s ease;
+  -webkit-filter: blur(0px);
+  cursor: pointer;
+
+}
+
+.diploma:nth-child(2) {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/javascriptScreenshot.png");
+  background-position: center center;
+  -webkit-filter: blur(2px);
+  transition: 1s ease;
+}
+
+.diploma:nth-child(2):hover {
+  background-color: rgba(0, 0, 0, .3);
+  transition: 1s ease;
+  -webkit-filter: blur(0px);
+  cursor: pointer;
+
+}
+
+.diploma:nth-child(3) {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/reactjsScreenshot.png");
+  background-position: center center;
+  -webkit-filter: blur(2px);
+  transition: 1s ease;
+}
+
+.diploma:nth-child(3):hover {
+  background-color: rgba(0, 0, 0, .3);
+  transition: 1s ease;
+  -webkit-filter: blur(0px);
+  cursor: pointer;
+
+}
+
+@media (max-width: 768px) {
+  .diploma {
+    -webkit-filter: blur(0px) !important;
+  }
+}
+
+/* TERMINA DIPLOMAS */
+
+/* REDES */
+.redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .redes {
+
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
