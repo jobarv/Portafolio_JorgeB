@@ -134,7 +134,10 @@ html {
 .nav__Link {
   padding: 10px;
 }
-
+/* MEDIA QUERIES */
+/* 268px
+560px
+720-960px */
 @media (min-width: 768px) {
   .navParent {
     flex-direction: row;

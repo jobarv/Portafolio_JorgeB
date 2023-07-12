@@ -1,0 +1,263 @@
+:root {
+    --fondoTarjeta: linear-gradient(90deg, rgba(152, 162, 197, 1) 0%, rgba(34, 78, 97, 1) 35%);
+    --letraPrincial: #ffff;
+    --fondoHover: #416da7;
+}
+
+html {
+    font-family: 'Arimo', sans-serif;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+
+    margin: 0rem;
+    padding: 0rem;
+    text-align: center;
+    background: var(--fondoTarjeta);
+}
+
+/* FONDO  */
+
+.triangulo1 {
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-top: 100px solid #b20000;
+    border-left: 100px solid #b20000;
+    border-bottom: 100px solid transparent;
+    z-index: 1000;
+}
+
+.cont {
+    width: 100%;
+}
+
+/* GLOBALES */
+
+h1,
+h2,
+h3,
+p {
+    color: var(--letraPrincial);
+}
+
+.icon {
+    max-width: 3rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+
+/* HEADER  */
+.hero {
+    width: 100%;
+    background-image: url(../img/alireza-khatami-f1PWFi2DNvI-unsplash.jpg);
+    height: 13rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.logo {
+    max-width: 18rem;
+    margin-bottom: -27px;
+    margin-top: -3%;
+    display: block;
+}
+
+
+.lema {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.logo_lema {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5px;
+    margin-top: -12rem;
+}
+
+/* NAV  */
+.objectfit {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.objectfit>img {
+    width: 11rem;
+    height: 15rem;
+    object-fit: contain;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: black;
+    border: 3px solid var(--fondoHover);
+}
+
+nav {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: -111px;
+}
+
+.nombre_puesto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ENLACES  */
+
+.cont-enlaces {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.enlaces {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.fondo_enlaces {
+    padding: 16px;
+    background-color: transparent;
+    border-radius: 2.5rem;
+}
+
+.fondo_enlaces:hover {
+    background: var(--fondoHover);
+    color: black;
+
+}
+
+/* NOSOTROS  */
+.nosotros {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+
+}
+
+.presentacion {
+    width: 70%;
+    background-image: url(../img/software.jpg);
+    border-radius: 3.5rem;
+    margin-bottom: 1rem;
+
+}
+
+
+/* MAP */
+.map {
+    width: 100%;
+    height: 19rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* FOOTER  */
+.espacio .footer .triangulo2 {
+    width: 33%;
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.triangulo2 {
+    width: 0;
+    height: 0;
+    border-right: 100px solid #000;
+    border-top: 100px solid transparent;
+    border-left: 100px solid transparent;
+    border-bottom: 100px solid #000;
+}
+
+/* MEDIA QUERIES  */
+@media (max-width: 650px) {
+    .hero {
+        height: 20rem;
+    }
+
+    .header {
+        justify-content: center;
+    }
+
+    .objectfit {
+        justify-content: center !important;
+    }
+
+    .logo_lema {
+        max-width: 73%;
+    }
+
+    .cont-enlaces {
+        margin-top: -1rem;
+        margin-bottom: -2rem;
+
+    }
+
+    .enlaces {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 8rem;
+        margin-bottom: 2rem;
+
+    }
+
+
+}
+
+@media (min-width: 960px) {
+    .objectfit {
+        justify-content: center !important;
+    }
+
+    .enlaces {
+        width: 60%;
+    }
+
+}
